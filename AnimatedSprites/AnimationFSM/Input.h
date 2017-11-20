@@ -1,5 +1,7 @@
 #ifndef INPUT_H
 #define INPUT_H
+#include <AnimatedSprite.h>
+
 class Input
 {
 public:
@@ -11,7 +13,11 @@ public:
 		IDLE,
 		UP,
 		LEFT,
-		RIGHT
+		RIGHT,
+		SPACE,
+		DOWN,
+		H,
+		S
 	};
 
 	void setCurrent(Action);

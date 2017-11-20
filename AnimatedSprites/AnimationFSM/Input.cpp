@@ -1,4 +1,6 @@
 #include <Input.h>
+#include <iostream>
+#include <SFML/Graphics.hpp>
 
 Input::Input() 
 {
@@ -6,7 +8,8 @@ Input::Input()
 }
 Input::~Input() {}
 
-void Input::setCurrent(Action a) {
+void Input::setCurrent(Action a)
+{
 	m_current = a;
 }
 

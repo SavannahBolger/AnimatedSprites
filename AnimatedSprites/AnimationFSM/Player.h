@@ -1,5 +1,6 @@
 #ifndef PLAYER_H
 #define PLAYER_H
+#include <SFML/Graphics.hpp>
 
 #include <Input.h>
 #include <Animation.h>
@@ -15,8 +16,9 @@ private:
 public:
 	Player(const AnimatedSprite&);
 	~Player();
+	AnimatedSprite m_animated_spriteArray[7];
 	AnimatedSprite& getAnimatedSprite();
-	void handleInput(Input);
+	void handleInput(Input, AnimatedSprite array[]);
 	void update();
 };
 

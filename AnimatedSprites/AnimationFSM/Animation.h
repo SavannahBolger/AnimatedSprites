@@ -23,6 +23,10 @@ public:
 	void idle();
 	void jumping();
 	void climbing();
+	void walking();
+	void shoveling();
+	void hammering();
+	void swordsmanship();
 
 // Try uncommenting and comment the declaration above
 //private:
